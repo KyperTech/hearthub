@@ -414,23 +414,23 @@ $(function(){
 
   var da = [
     {
-      label: "iPhone5S",
+      label: "MRSA",
       data: 40
     },    
     {
-      label: "iPad Mini",
+      label: "C. Diff",
       data: 10
     },
     {
-      label: "iPad Mini Retina",
+      label: "Other",
       data: 20
     },
     {
-      label: "iPhone4S",
+      label: "Pneumonia",
       data: 12
     },
     {
-      label: "iPad Air",
+      label: "Surgical Site Infection",
       data: 18
     }
   ], 
