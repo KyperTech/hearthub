@@ -29,7 +29,7 @@ $(function(){
                 show: true
             },
             grow: {
-              active: true,
+              active: false,
               steps: 50
             },
             shadowSize: 2
@@ -120,10 +120,10 @@ $(function(){
   }
   $("#flot-chart").length && $.plot($("#flot-chart"), [{
           data: d2,
-          label: "Unique Visits"
+          label: "Doctors"
       }, {
           data: d3,
-          label: "Page Views"
+          label: "Patients"
       }], 
       {
         series: {
