@@ -45,21 +45,15 @@ module.exports = function(grunt) {
         },
         shell:{
             home:{
-                command:"s3cmd sync --exclude './src/bower_components/' --exclude '*.less' --exclude './src/less/' --exclude '.DS_Store' --exclude '.buildignore' --exclude '.htaccess' --acl-public ./src/ s3://hearthub-home"
+                command:"s3cmd sync --exclude  ./bower_components' --exclude '.DS_Store' --exclude '.buildignore' --exclude '.htaccess' --acl-public ./app s3://hearthub-home"
             },
             test:{
-                command:"s3cmd sync --exclude './src/bower_components/' --exclude '*.less' --exclude './src/less/' --exclude '.DS_Store' --exclude '.buildignore' --exclude '.htaccess' --acl-public ./src/ s3://hearthub-test"
+                command:"s3cmd sync --exclude  ./bower_components' --exclude '.DS_Store' --exclude '.buildignore' --exclude '.htaccess' --acl-public ./app s3://hearthub-test"
             },
             options:{
                 stdout:true
             }
         },
-        open:{
-          cat:{
-          path:"https://trigger.io/catalyst/client/#EA3E3BBD-C54D-4ECA-8FA9-6764B62E84F0",
-          app: "Google Chrome"
-          }
-        }
 
     });
 
