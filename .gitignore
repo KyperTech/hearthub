@@ -1,0 +1,10 @@
+node_modules
+development
+release
+forge-error.log
+.DS_Store
+.lib
+.template
+.wiki
+src/identity.json
+local_config.json
