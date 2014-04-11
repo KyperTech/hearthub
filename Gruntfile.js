@@ -12,7 +12,7 @@ module.exports = function(grunt) {
                     port: 8080,
                     //keepalive: true, keeping grunt running
                     //livereload:true,
-                    base: './src/',
+                    base: './app/',
                     open: {
                         target: 'http://localhost:8080',
                         appName: 'Google Chrome',
@@ -23,13 +23,13 @@ module.exports = function(grunt) {
         less: {
             style: {
                 files: {
-                    "src/css/styles.css": "./less/styles.less"
+                    "app/css/app.css": "less/app.less"
                 },
             }
         },
         watch: {
             less: {
-                files: ["./less/*.less"],
+                files: ["less/*.less"],
                 tasks: ["less:style"],
                 options:{
                     //debounceDelay:1000,
@@ -37,7 +37,7 @@ module.exports = function(grunt) {
                 }
             },
             html: {
-                files: ['src/index.html'],
+                files: ['app/index.html'],
                 options: {
                     livereload: true
                 }
