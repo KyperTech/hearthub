@@ -45,10 +45,10 @@ module.exports = function(grunt) {
         },
         shell:{
             home:{
-                command:"s3cmd sync --exclude  ./bower_components' --exclude '.DS_Store' --exclude '.buildignore' --exclude '.htaccess' --acl-public ./app s3://hearthub-home"
+                command:"s3cmd sync --exclude '.DS_Store' --acl-public ./app/ s3://hearthub-home"
             },
             test:{
-                command:"s3cmd sync --exclude  ./bower_components' --exclude '.DS_Store' --exclude '.buildignore' --exclude '.htaccess' --acl-public ./app s3://hearthub-test"
+                command:"s3cmd sync --exclude '.DS_Store' --acl-public ./app/ s3://hearthub-test"
             },
             options:{
                 stdout:true
